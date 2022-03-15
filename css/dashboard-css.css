@@ -1,6 +1,6 @@
 @font-face {
     font-family: DINPro;
-    src: url(fonts/DINPro-Regular.otf);
+    src: url(../assets/fonts/DINPro-Regular.otf);
   }
 
 .radio-toolbar {
@@ -67,9 +67,10 @@
 
 .dashboard-back{
     position: absolute;
+    width: 340px;
     left: 50%;
     -webkit-transform: translate(-50%);
     transform: translate(-50%);
     z-index: -1;
-    margin-top: -45px;
+    margin-top: -40px;
 }

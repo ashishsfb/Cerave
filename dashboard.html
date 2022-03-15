@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/dashboard-css.css">
     </head>
     <body>
@@ -9,32 +8,32 @@
             <input type="radio" id="radioReview" name="dashboard" value="1" checked>
             <label for="radioReview">
                 <img class="icon" src="assets/dashboard/reviews-icon.png">
-                <p class="label"> Reviews </p>
+                <p id="review-btn-1" class="label"></p>
             </label>
 
             <input type="radio" id="radioOurScience" name="dashboard" value="2">
             <label for="radioOurScience">
                 <img class="icon" src="assets/dashboard/our-science-icon.png">
-                <p class="label">Our Science</p>
+                <p id="review-btn-2" class="label"></p>
             </label>
 
             <input type="radio" id="radioTexture" name="dashboard" value="3">
             <label for="radioTexture">
                 <img class="icon" src="assets/dashboard/texture-icon.png">
-                <p class="label">Texture</p>
+                <p id="review-btn-3" class="label"></p>
             </label>
 
             <input type="radio" id="radioFrequentlyBT" name="dashboard" value="4">
             <label for="radioFrequentlyBT">
                 <img class="icon" src="assets/dashboard/frequently-bt-icon.png">
-                <p class="label last-label">Frequently Bought Together</p>
+                <p id="review-btn-4" class="label last-label"></p>
             </label>
         </div>
         <div>
             <img class="dashboard-back" src="assets/dashboard/dashboard-back.png">
         </div>
     </body>    
-
+    <script src="js/dashboard.js"></script>
 
 
 </html>
