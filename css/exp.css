@@ -11,4 +11,9 @@ body{
     margin: 0;
     right: 0px;
     left: 0px;
+    z-index: 100;
+}
+
+.btn{
+    z-index: 101;
 }
