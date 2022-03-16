@@ -17,10 +17,10 @@
 
         <label for="lang">Choose a language:</label>
         <select name="ln" id="language"></select>
-        
-        <input type='hidden' id='prod_name' name='pd' value=''/>
-        <input type='hidden' id='variant_name' name='vr' value=''/>
-        
+
+        <input type='hidden' id='prod_name' name='pd' value='' />
+        <input type='hidden' id='variant_name' name='vr' value='' />
+
         <br><br>
         <input type="submit" value="Submit">
     </form>
@@ -32,9 +32,8 @@
 
 <script type="text/javascript">
 
-    
 
-    $(document).on('ready', function () {
+    window.onload = function () {
 
         var url_string = window.location.href; //window.location.href
         var url = new URL(url_string);
@@ -43,7 +42,7 @@
         var c = url.searchParams.get("vr");
 
         var path = b + "/" + c + "/languages.json"
-        
+
         document.getElementById('prod_name').value = b;
         document.getElementById('variant_name').value = c;
 
@@ -53,10 +52,7 @@
             }); // close each()
         }); // close getJSON()
 
-    });
-
-   
-
+    }
 
 </script>
 

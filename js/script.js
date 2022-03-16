@@ -14,23 +14,15 @@ var reviewBtnVal = 0;
 window.path = prod + "/" + variation + "/" + lang // This is path to product assets folder
 window.dataPath = path + "/data.json" // This is a direct path to the data.json
 
-$(document).on('ready', function () {
-    
-    updateData();
+
+
+window.onload = function(){
     loadDashboard();
-    
-});
-
-
-window.updateData = () =>{
-    $.getJSON(dataPath, function (data) {
-        
-    });
 }
+
 
 window.loadDashboard = () =>{
     $(function(){
-        // $("#dashboard").load("dashboard.html #review-btn-1")
         $("#dashboard").load("dashboard.html"); 
       });
 }
