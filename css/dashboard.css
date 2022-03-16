@@ -1,7 +1,7 @@
 @font-face {
     font-family: DINPro;
     src: url(../assets/fonts/DINPro-Regular.otf);
-  }
+}
 
 .radio-toolbar {
     left: 50%;
@@ -27,8 +27,6 @@
     box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
 }
 
-
-
 .radio-toolbar input[type="radio"]:checked+label {
     border: none;
     width: 50px;
@@ -39,7 +37,7 @@
     box-shadow: inset 2px 2px 4px rgba(50, 50, 50, 0.5);
     -moz-box-shadow: inset 2px 2px 4px rgba(50, 50, 50, 0.5);
     -webkit-box-shadow: inset 2px 2px 4px rgba(50, 50, 50, 0.5);
-   
+
 }
 
 .icon {
@@ -47,7 +45,7 @@
     padding: 13px;
 }
 
-.label{
+.label {
     width: 80px !important;
     height: auto;
     position: relative;
@@ -60,12 +58,12 @@
     margin-top: 3px;
 }
 
-.last-label{
+.last-label {
     margin-top: -9px;
     top: 10px;
 }
 
-.dashboard-back{
+.dashboard-back {
     position: absolute;
     width: 340px;
     left: 50%;
