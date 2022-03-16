@@ -9,7 +9,7 @@ var reviewLocation = "reviewLocation" + reviewBtnVal
 var reviewAge = "reviewAge" + reviewBtnVal
 var review = "review" + reviewBtnVal
 
-$.getJSON(path, function (data) {
+$.getJSON(dataPath, function (data) {
     document.getElementById("review-heading").innerHTML = data[reviewHeading]
     document.getElementById("stars").innerHTML = getStars(parseInt(data[reviewStars]))
     document.getElementById("review-metrics").innerHTML = data[reviewName] + " | " + data[reviewLocation] + " | " + data[reviewAge]

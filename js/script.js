@@ -7,9 +7,12 @@ var prod = url.searchParams.get("pd");
 var variation = url.searchParams.get("vr");
 
 var path = ""
+var dataPath = ""
 var reviewBtnVal = 0;
 
-window.path = prod + "/" + variation + "/" + lang + "/data.json"
+
+window.path = prod + "/" + variation + "/" + lang // This is path to product assets folder
+window.dataPath = path + "/data.json" // This is a direct path to the data.json
 
 $(document).on('ready', function () {
     
@@ -20,7 +23,7 @@ $(document).on('ready', function () {
 
 
 window.updateData = () =>{
-    $.getJSON(path, function (data) {
+    $.getJSON(dataPath, function (data) {
         
     });
 }
@@ -44,4 +47,10 @@ window.loadReviewModal = (value) =>{
         console.log(reviewBtnVal)
 
       });
+}
+
+window.loadEfficacyModal = () =>{
+    $(function(){
+        $("#efficacy-modal").load("efficacy-modal.html"); 
+    });
 }
